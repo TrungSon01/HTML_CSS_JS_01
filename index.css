@@ -1,0 +1,82 @@
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 6 cột */
+  grid-template-rows: repeat(10, 1fr); /* 12 hàng */
+  grid-gap: 10px; /* Khoảng cách giữa các phần tử */
+  height: 800px; /* Tùy chọn: đặt chiều cao toàn màn hình */
+  width: 1640px;
+}
+/* ----------- */
+.item__container1 {
+  grid-row: 1 / 2;
+  background-color: #cce5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  border: 1px solid #ddd;
+}
+.item__container2 {
+  grid-row: 3 / 4;
+  background-color: #cce5ff;
+  text-align: center;
+  padding: 5%;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item__container3 {
+  grid-row: 5 / 6;
+  background-color: #cce5ff;
+  text-align: center;
+  padding: 5%;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item__container4 {
+  grid-row: 7 / 8;
+  background-color: #cce5ff;
+  text-align: center;
+  padding: 5%;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item__container5 {
+  grid-row: 9 / 10;
+  background-color: #cce5ff;
+  text-align: center;
+  padding: 5%;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --------------- */
+.big__item__contai {
+  background-color: rgb(209, 209, 35);
+  grid-column: 2 / 7; /* Từ cột 2 đến cột 6 */
+  grid-row: 1 / 10; /* Chiếm tất cả 12 hàng */
+}
+
+.but__item__contai {
+  padding: 15px 30px;
+  font-size: 18px;
+  width: auto;
+  height: auto;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer; /* Con trỏ chuột thay đổi khi hove*/
+}
+
+.but__item__contai:hover {
+  transition-duration: 0.4s;
+  background: rgb(14, 13, 13);
+}
